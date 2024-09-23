@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+}
+nav{
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+    background: rgb(38, 250, 197);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+    <h1>Blog Posts</h1>
+    <ul>
+        {% for artcle in articles %}
+            <li>
+                <h2><a href="{{ artcle.slug }}">{{ artcle.title }}</a></h2>
+                <p>{{ article.photo}}</p>
+                <p>{{ article.body |truncatewords:20 }}</p> <!-- Displaying the first 20 words -->
+                <small>Published on: {{article.published}}</small>
+            </li>
+        {% empty %}
+            <li>No posts available.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
