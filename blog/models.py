@@ -23,4 +23,4 @@ class article(models.Model):
      return self.title
  
     def get_absolute_url(self):
-      return "/blogs/{self.slug}/"
+      return ("/blogs/{self.slug}/")
